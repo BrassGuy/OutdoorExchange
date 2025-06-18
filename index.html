@@ -273,13 +273,10 @@
                 <span>CLOSE</span>
             </button>
             <div class="video-container">
-                <iframe 
-                    id="videoFrame"
-                    src=""
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+                <video id="storyVideo" controls preload="metadata" poster="images/video-poster.jpg">
+                    <source src="images/story.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
             <div class="video-summary">
                 <h3>Our Story</h3>
@@ -299,6 +296,11 @@
                     </div>
                 </div>
                 <a href="shop.html" class="btn btn-primary video-cta">Shop Our Collection</a>
+            </div>
+
+            <!-- Video Footer (Description + Disclaimer) -->
+            <div class="video-footer">
+                <p class="sample-disclaimer"><strong>Disclaimer:</strong> Outdoor Exchange is a fictional brand created by Pezzolla Web Studios for portfolio demonstration only. No products are actually for sale.</p>
             </div>
         </div>
     </div>
