@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMPLE WEBSITE</title>
+    <meta name="description" content="Premium Outdoor Wear, proudly made in America. Built for generations, tested in the field, trusted by patriots.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Outdoor Exchange</span>
+                    </a>
+                </div>
+                
+                <div class="nav-links">
+                    <div class="nav-item dropdown">
+                        <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="shop.html?category=jackets">Outdoor Jackets</a>
+                            <a href="shop.html?category=pants">Outdoor Pants</a>
+                            <a href="shop.html?category=boots">Boots & Footwear</a>
+                        </div>
+                    </div>
+                    <a href="heritage.html" class="nav-link">Our Heritage</a>
+                    <a href="index.html#about" class="nav-link">About Us</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="search-toggle" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#account" class="nav-icon" aria-label="Account">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#cart" class="nav-icon cart-icon" aria-label="Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <button class="mobile-menu-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <div class="mobile-nav-section">
+                <h3>Shop</h3>
+                <a href="shop.html?category=jackets">Outdoor Jackets</a>
+                <a href="shop.html?category=pants">Outdoor Pants</a>
+                <a href="shop.html?category=boots">Boots & Footwear</a>
+            </div>
+            <a href="heritage.html">Our Heritage</a>
+            <a href="index.html#about">About Us</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Large title that shrinks into navbar -->
+        <div class="hero-title-large">
+            <h1>Outdoor Exchange</h1>
+        </div>
+        <div class="hero-content">
+            <div class="hero-cta">
+                <a href="#shop" class="btn btn-primary">Shop Now</a>
+                <a href="#video" class="btn btn-secondary">
+                    <i class="fas fa-play"></i>
+                    Watch Our Story
+                </a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories" id="shop">
+        <div class="container">
+            <h2>CURATED BY THE OUTDOORS</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <div class="flip-container">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="category-image">
+                                    <img src="images/fieldjackets.png" alt="Premium Jackets" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="flip-back">
+                                <div class="category-info">
+                                    <h4>Jackets</h4>
+                                    <ul>
+                                        <li><i class="fas fa-shield-alt"></i> Weather Resistant</li>
+                                        <li><i class="fas fa-leaf"></i> Camo Options</li>
+                                        <li><i class="fas fa-star"></i> Premium Materials</li>
+                                        <li><i class="fas fa-flag-usa"></i> Made in USA</li>
+                                    </ul>
+                                    <a href="shop.html?category=jackets" class="btn btn-primary btn-sm">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Jackets</h3>
+                </div>
+                <div class="category-item">
+                    <div class="flip-container">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="category-image">
+                                    <img src="images/fieldpants.png" alt="Durable Pants" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="flip-back">
+                                <div class="category-info">
+                                    <h4>Pants</h4>
+                                    <ul>
+                                        <li><i class="fas fa-cut"></i> Reinforced Knees</li>
+                                        <li><i class="fas fa-tint"></i> Water Repellent</li>
+                                        <li><i class="fas fa-expand-arrows-alt"></i> Flexible Fit</li>
+                                        <li><i class="fas fa-flag-usa"></i> Made in USA</li>
+                                    </ul>
+                                    <a href="shop.html?category=pants" class="btn btn-primary btn-sm">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Pants</h3>
+                </div>
+                <div class="category-item">
+                    <div class="flip-container">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="category-image">
+                                    <img src="images/boots.png" alt="Premium Boots" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="flip-back">
+                                <div class="category-info">
+                                    <h4>Boots</h4>
+                                    <ul>
+                                        <li><i class="fas fa-mountain"></i> All-Terrain Grip</li>
+                                        <li><i class="fas fa-snowflake"></i> Insulated Options</li>
+                                        <li><i class="fas fa-shoe-prints"></i> Silent Step</li>
+                                        <li><i class="fas fa-flag-usa"></i> Made in USA</li>
+                                    </ul>
+                                    <a href="shop.html?category=boots" class="btn btn-primary btn-sm">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Boots</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="about-title">About Us</h2>
+                <div class="about-text">
+                    <p class="sample-disclaimer"><strong>Disclaimer:</strong> Outdoor Exchange is a fictional brand created by Pezzolla Web Studios to demonstrate web-design capabilities. This website is for showcase purposes only and does not represent an actual business.</p>
+                    <p class="about-intro">Outdoor Exchange began in the rugged backcountry of Montana, where our founder's quest for gear that could survive months in the wilderness sparked a movement. What started as a single wax-canvas field jacket stitched at a hunting cabin has grown into a full line of performance apparel trusted by guides, veterans, and weekend explorers alike.</p>
+                    <p>Our apparel is hand-cut and sewn in small batches in the USA, using time-tested materials like 12-oz waxed canvas, Cordura<sup>®</sup> nylon, and American-tanned leather. Before any product earns the Outdoor Exchange patch, it endures months of field testing in blistering deserts, frozen timberlines, and everything in between.</p>
+                    <p>Beyond crafting gear that lasts generations, we are committed to stewarding the wild places that inspire us. A portion of every sale is donated to habitat restoration projects and veteran outdoor programs across the country.</p>
+                </div>
+                <div class="about-values-simple">
+                    <div class="value-simple">
+                        <h4>Craftsmanship</h4>
+                        <p>Hand–cut, hand–sewn, and inspected to the last stitch in Bozeman, MT.</p>
+                    </div>
+                    <div class="value-simple">
+                        <h4>Integrity</h4>
+                        <p>Lifetime repair guarantee—if we made it, we mend it.</p>
+                    </div>
+                    <div class="value-simple">
+                        <h4>Conservation</h4>
+                        <p>5% of every purchase funds habitat restoration &amp; veteran outdoor programs.</p>
+                    </div>
+                    <div class="value-simple">
+                        <h4>Community</h4>
+                        <p>We collaborate with local artisans and suppliers to keep jobs on home soil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Connected</h2>
+                <p>Subscribe for exclusive offers and company updates</p>
+                <form class="newsletter-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Your company description goes here. Briefly explain what your business does, your mission, and what sets you apart from competitors.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#shipping">Shipping Policy</a></li>
+                        <li><a href="#returns">Returns & Warranty</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> Your Phone Number</li>
+                        <li><i class="fas fa-envelope"></i> your-email@domain.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Your Business Address</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>This is a sample web design for Pezzolla Web Studios</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-overlay"></div>
+        <div class="video-modal-content">
+            <button class="video-modal-close" aria-label="Close video">
+                <i class="fas fa-times"></i>
+                <span>CLOSE</span>
+            </button>
+            <div class="video-container">
+                <iframe 
+                    id="videoFrame"
+                    src=""
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-summary">
+                <h3>Our Story</h3>
+                <p>Learn about your company's story, values, and what makes your products or services unique. This would be where you showcase your brand's personality and connect with your customers.</p>
+                <div class="video-details">
+                    <div class="video-detail">
+                        <i class="fas fa-star"></i>
+                        <span>Your Key Feature #1</span>
+                    </div>
+                    <div class="video-detail">
+                        <i class="fas fa-award"></i>
+                        <span>Your Key Feature #2</span>
+                    </div>
+                    <div class="video-detail">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>Your Key Feature #3</span>
+                    </div>
+                </div>
+                <a href="shop.html" class="btn btn-primary video-cta">Shop Our Collection</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Bottom Bar -->
+    <div class="mobile-bottom-bar">
+        <a href="shop.html" class="mobile-bar-item">
+            <i class="fas fa-store"></i>
+            <span>Shop</span>
+        </a>
+        <a href="shop.html" class="mobile-bar-item">
+            <i class="fas fa-th-large"></i>
+            <span>Categories</span>
+        </a>
+        <a href="#cart" class="mobile-bar-item">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Cart</span>
+        </a>
+        <a href="#account" class="mobile-bar-item">
+            <i class="fas fa-user"></i>
+            <span>Account</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Outdoor Exchange</title>
+    <meta name="description" content="Shop premium hunting gear. Field jackets, pants, boots, and gear - all made in America.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Outdoor Exchange</span>
+                    </a>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="shop.html?category=jackets">Outdoor Jackets</a>
+                            <a href="shop.html?category=pants">Outdoor Pants</a>
+                            <a href="shop.html?category=boots">Boots & Footwear</a>
+                        </div>
+                    </div>
+                    <a href="heritage.html" class="nav-link">Our Heritage</a>
+                    <a href="index.html#about" class="nav-link">About Us</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="search-toggle" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="index.html" class="nav-icon" aria-label="Home">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <a href="#account" class="nav-icon" aria-label="Account">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#cart" class="nav-icon cart-icon" aria-label="Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <button class="mobile-menu-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="index.html">Home</a>
+            <div class="mobile-nav-section">
+                <h3>Shop</h3>
+                <a href="shop.html?category=jackets">Outdoor Jackets</a>
+                <a href="shop.html?category=pants">Outdoor Pants</a>
+                <a href="shop.html?category=boots">Boots & Footwear</a>
+            </div>
+            <a href="heritage.html">Our Heritage</a>
+            <a href="index.html#about">About Us</a>
+        </nav>
+    </div>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <span>Shop</span>
+            </div>
+            <h1>Shop Our Collection</h1>
+            <p>This is a sample website, not a real business. This is where you would sell your products.</p>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Filters Sidebar -->
+                <aside class="shop-filters">
+                    <div class="filter-header">
+                        <h3>Filters</h3>
+                        <button class="clear-filters">Clear All</button>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Categories</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="jackets">
+                                <span class="checkmark"></span>
+                                Field Jackets
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="pants">
+                                <span class="checkmark"></span>
+                                Field Pants
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="boots">
+                                <span class="checkmark"></span>
+                                Hunting Boots
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="price" value="0-100">
+                                <span class="checkmark"></span>
+                                Under $100
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="price" value="100-200">
+                                <span class="checkmark"></span>
+                                $100 - $200
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="price" value="200-300">
+                                <span class="checkmark"></span>
+                                $200 - $300
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="price" value="300+">
+                                <span class="checkmark"></span>
+                                $300+
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Features</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="features" value="waterproof">
+                                <span class="checkmark"></span>
+                                Waterproof
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="features" value="insulated">
+                                <span class="checkmark"></span>
+                                Insulated
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="features" value="camo">
+                                <span class="checkmark"></span>
+                                Camouflage
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="features" value="made-usa">
+                                <span class="checkmark"></span>
+                                Made in USA
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="shop-main">
+                    <div class="shop-toolbar">
+                        <div class="results-count">
+                            <span id="results-count">Showing 12 products</span>
+                        </div>
+                        <div class="sort-options">
+                            <select id="sort-select">
+                                <option value="featured">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name">Name A-Z</option>
+                            </select>
+                        </div>
+                        <button class="mobile-filter-toggle">
+                            <i class="fas fa-filter"></i>
+                            Filters
+                        </button>
+                    </div>
+
+                    <div class="products-grid" id="products-grid">
+                        <!-- Field Jackets -->
+                        <div class="product-card" data-category="jackets" data-price="299" data-features="waterproof,camo,made-usa">
+                            <div class="product-image">
+                                <img src="images/fieldjackets.png" alt="Premium Field Jacket" loading="lazy">
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Premium Field Jacket</h3>
+                                <p class="product-description">Weather-resistant hunting jacket with reinforced shoulders</p>
+                                <div class="product-features">
+                                    <span class="feature-tag">Waterproof</span>
+                                    <span class="feature-tag">Made in USA</span>
+                                </div>
+                                <div class="product-price">$299.99</div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="jackets" data-price="249" data-features="insulated,camo,made-usa">
+                            <div class="product-image">
+                                <img src="images/fieldjackets.png" alt="Insulated Hunting Jacket" loading="lazy">
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Insulated Hunting Jacket</h3>
+                                <p class="product-description">Warm insulated jacket for cold weather hunting</p>
+                                <div class="product-features">
+                                    <span class="feature-tag">Insulated</span>
+                                    <span class="feature-tag">Camo</span>
+                                </div>
+                                <div class="product-price">$249.99</div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="jackets" data-price="199" data-features="camo,made-usa">
+                            <div class="product-image">
+                                <img src="images/fieldjackets.png" alt="Lightweight Field Jacket" loading="lazy">
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Lightweight Field Jacket</h3>
+                                <p class="product-description">Perfect for warmer weather hunting and outdoor activities</p>
+                                <div class="product-features">
+                                    <span class="feature-tag">Lightweight</span>
+                                    <span class="feature-tag">Breathable</span>
+                                </div>
+                                <div class="product-price">$199.99</div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Field Pants -->
+                        <div class="product-card" data-category="pants" data-price="179" data-features="waterproof,made-usa">
+                            <div class="product-image">
+                                <img src="images/fieldpants.png" alt="Reinforced Field Pants" loading="lazy">
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Reinforced Field Pants</h3>
+                                <p class="product-description">Durable pants with reinforced knees and water-repellent coating</p>
+                                <div class="product-features">
+                                    <span class="feature-tag">Reinforced</span>
+                                    <span class="feature-tag">Water-Repellent</span>
+                                </div>
+                                <div class="product-price">$179.99</div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="pants" data-price="149" data-features="camo,made-usa">
+                            <div class="product-image">
+                                <img src="images/fieldpants.png" alt="Camouflage Field Pants" loading="lazy">
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Camouflage Field Pants</h3>
+                                <p class="product-description">Flexible fit hunting pants in premium camouflage pattern</p>
+                                <div class="product-features">
+                                    <span class="feature-tag">Camo Pattern</span>
+                                    <span class="feature-tag">Flexible Fit</span>
+                                </div>
+                                <div class="product-price">$149.99</div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="pants" data-price="129" data-features="made-usa">
+                            <div class="product-image">
+                                <img src="images/fieldpants.png" alt="Basic Field Pants" loading="lazy">
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Basic Field Pants</h3>
+                                <p class="product-description">Essential hunting pants for everyday outdoor activities</p>
+                                <div class="product-features">
+                                    <span class="feature-tag">Durable</span>
+                                    <span class="feature-tag">Comfortable</span>
+                                </div>
+                                <div class="product-price">$129.99</div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Hunting Boots -->
+                        <div class="product-card" data-category="boots" data-price="349" data-features="waterproof,insulated,made-usa">
+                            <div class="product-image">
+                                <img src="images/boots.png" alt="Insulated Hunting Boots" loading="lazy">
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Insulated Hunting Boots</h3>
+                                <p class="product-description">Premium waterproof boots with 400g insulation</p>
+                                <div class="product-features">
+                                    <span class="feature-tag">Waterproof</span>
+                                    <span class="feature-tag">400g Insulation</span>
+                                </div>
+                                <div class="product-price">$349.99</div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="boots" data-price="279" data-features="waterproof,made-usa">
+                            <div class="product-image">
+                                <img src="images/boots.png" alt="All-Season Hunting Boots" loading="lazy">
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>All-Season Hunting Boots</h3>
+                                <p class="product-description">Versatile boots perfect for year-round hunting</p>
+                                <div class="product-features">
+                                    <span class="feature-tag">All-Terrain</span>
+                                    <span class="feature-tag">Silent Step</span>
+                                </div>
+                                <div class="product-price">$279.99</div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="boots" data-price="229" data-features="made-usa">
+                            <div class="product-image">
+                                <img src="images/boots.png" alt="Lightweight Hunting Boots" loading="lazy">
+                                <div class="product-overlay">
+                                    <button class="btn btn-primary quick-view">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Lightweight Hunting Boots</h3>
+                                <p class="product-description">Comfortable lightweight boots for long hunting trips</p>
+                                <div class="product-features">
+                                    <span class="feature-tag">Lightweight</span>
+                                    <span class="feature-tag">Comfortable</span>
+                                </div>
+                                <div class="product-price">$229.99</div>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Your company description goes here. Briefly explain what your business does, your mission, and what sets you apart from competitors.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#shipping">Shipping Policy</a></li>
+                        <li><a href="#returns">Returns & Warranty</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> Your Phone Number</li>
+                        <li><i class="fas fa-envelope"></i> your-email@domain.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Your Business Address</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>This is a sample web design for Pezzolla Web Studios</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Filter Modal -->
+    <div class="mobile-filter-modal">
+        <div class="mobile-filter-header">
+            <h3>Filters</h3>
+            <button class="mobile-filter-close">&times;</button>
+        </div>
+        <div class="mobile-filter-content">
+            <!-- Filters will be duplicated here for mobile -->
+        </div>
+        <div class="mobile-filter-footer">
+            <button class="btn btn-secondary clear-filters-mobile">Clear All</button>
+            <button class="btn btn-primary apply-filters-mobile">Apply Filters</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="shop-script.js"></script>
+</body>
+</html>
