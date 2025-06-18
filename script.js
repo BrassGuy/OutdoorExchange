@@ -357,24 +357,29 @@ addToCartButtons.forEach(button => {
 // Video Modal Functionality
 function setupVideoModal() {
     const videoModal = document.getElementById('videoModal');
-    const videoFrame = document.getElementById('videoFrame');
+    const storyVideo = document.getElementById('storyVideo');
     const videoModalClose = document.querySelector('.video-modal-close');
     const videoModalOverlay = document.querySelector('.video-modal-overlay');
     const watchStoryButton = document.querySelector('a[href="#video"]');
 
-    // Sample video URL - replace with your actual video URL
-    const videoUrl = 'https://www.youtube.com/watch?v=Se5NjX-cM5I';
+    // No external video URL needed; using local MP4 in <video> element
 
     // Function to open modal
     function openVideoModal() {
-        videoFrame.src = videoUrl;
+        if (storyVideo) {
+            storyVideo.currentTime = 0;
+            storyVideo.play();
+        }
         videoModal.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
 
     // Function to close modal
     function closeVideoModal() {
-        videoFrame.src = '';
+        if (storyVideo) {
+            storyVideo.pause();
+            storyVideo.currentTime = 0;
+        }
         videoModal.classList.remove('active');
         document.body.style.overflow = '';
     }
