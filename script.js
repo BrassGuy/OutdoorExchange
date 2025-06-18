@@ -363,7 +363,7 @@ function setupVideoModal() {
     const watchStoryButton = document.querySelector('a[href="#video"]');
 
     // Sample video URL - replace with your actual video URL
-    const videoUrl = '';
+    const videoUrl = 'https://www.youtube.com/watch?v=Se5NjX-cM5I';
 
     // Function to open modal
     function openVideoModal() {
